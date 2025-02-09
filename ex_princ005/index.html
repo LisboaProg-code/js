@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 05</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Analisador de números</h1>
+    </header>
+
+    <section id="contein">
+        <div id="conteiner2">
+
+            <p id="conteiner1"><label for="num">Número (entre 1 a 100): <input type="number" name="num" id="num" required min="1" max="100" placeholder="x"></label><input id="enviar" type="submit" value="Adicionar" onclick="adicionar()"></p>
+
+            <div class="resultado">
+                <select name="numeros" id="numeros" size="5"></select>
+            </div>
+
+            <p><input id="enviar" type="submit" value="Finalizar" onclick="finalizar()"></p>
+
+            <div id="resultado">
+                <p id="ress1"></p>
+                <p id="ress2"></p>
+                <p id="ress3"></p>
+                <p id="ress4"></p>
+                <p id="ress5"></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; LisboaProg</p>
+    </footer>
+
+</body>
+</html>
