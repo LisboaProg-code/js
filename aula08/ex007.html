@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media bimestral</title>
+    <style>
+
+        body{
+            background-color: lightblue;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    
+
+    <script>
+
+        var nota1 = Number.parseFloat(window.prompt('Qual foi sua nota no 1° Bimestre?'))
+        var nota2 = Number.parseFloat(window.prompt('Qual foi sua nota no 2° Bimestre?'))
+        var nota3 = Number.parseFloat(window.prompt('Qual foi sua nota no 3° Bimestre?'))
+        var nota4 = Number.parseFloat(window.prompt('Qual foi sua nota no 4° Bimestre?'))
+        var media = (nota1 + nota2 + nota3 + nota4) / 4
+        var result = media >= 7.0 ? 'aprovado': 'reprovado'
+
+        document.write(`Com as notas <br> <br> <code> ${nota1.toFixed(1)} no 1° bimestre <br> ${nota2.toFixed(1)} no 2° bimestre <br> ${nota3.toFixed(1)} no 3° bimestre <br> ${nota4.toFixed(1)} no 4° bimestre <br> <br> </code>`)
+        document.write(`Sua média foi ${media.toFixed(1)} <br>`)
+        document.write(`Você foi ${result} <br>`)
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+
+        body{
+            background-color: lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="tt">Iniciando os estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript.</p>
+    <div class="click">Clique aqui!</div> <br>
+
+    <script>
+        var corpo = window.document.body
+
+        /* var d1 = document.getElementById('click')
+        
+        d1.style.color = 'white'
+        d1.innerText = 'Mudou o texto. kakakaka' */
+
+        /* var d1 = document.getElementsByName('click')[0]
+
+        d1.style.background = 'black'
+        d1.style.color = 'white'
+        d1.innerText = 'Olá' */
+
+        /* var d1 = document.getElementsByClassName('click')[0]
+
+        d1.innerHTML = 'Olá'
+        d1.style.background = 'black'
+        d1.style.color = 'white' */
+
+        var d1 = window.document.querySelector('h1.tt')
+        d1.style.background = 'lightgreen'
+
+    </script>
+
+</body>
+</html>

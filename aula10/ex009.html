@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+
+        body{
+            background-color: lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            width: 95vw;
+            height: 95vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #conteiner{
+            height: 60vh;
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #area{
+            background-color: white;
+            border-radius: 15px;
+            border: 1px solid black;
+            width: 300px;
+            text-align: center;
+            height: 500px;
+            align-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="conteiner">
+        <div id="area">
+            Interaja...
+        </div>
+    </div>
+
+    <script>
+
+        const ar = document.getElementById('area')
+
+        ar.addEventListener('click', clicar)
+        ar.addEventListener('mouseenter', entrar)
+        ar.addEventListener('mouseout', saiu)
+
+        function clicar(){
+            ar.innerText = 'Clicou'
+            ar.style.background = 'darkred'
+        }
+
+        function entrar(){
+            ar.innerText = 'Bem vindo'
+            ar.style.background = 'darkblue'
+            ar.style.color = 'white'
+        }
+
+        function saiu(){
+            ar.innerText = 'Tchau'
+            ar.style.background = 'darkgreen'
+            ar.style.color = 'white'
+        }
+
+    </script>
+
+</body>
+</html>

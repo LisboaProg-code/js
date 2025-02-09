@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 04</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+
+    <section id="contein">
+        <div id="conteiner2">
+
+            <p><label for="num">Número <input type="number" name="n" id="num" required min="1" value="0" placeholder="x"></label></p>
+            
+            <p><input id="enviar" type="submit" value="Gerar Tabuada" onclick="calcular()"></p>
+
+            <p id="tabuada"><textarea name="tabuada" id="tab"></textarea> </p>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; LisboaProg</p>
+    </footer>
+
+</body>
+</html>

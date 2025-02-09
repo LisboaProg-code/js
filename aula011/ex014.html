@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País de origem</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Qual seu país de origem?</h1>
+
+    <input type="text" name="pais" id="pais">
+    <input type="submit" value="Enviar" onclick="origem()">
+    <div id="res">
+
+    </div>
+
+    <script>
+
+        function origem(){
+
+            const naçao = document.getElementById('pais')
+            const nacionalidade = naçao.value
+            const resultado = document.getElementById('res')
+            resultado.innerHTML = `<p>Seu país de origem é <strong>${nacionalidade}</strong> </p>`
+
+            if (nacionalidade == 'Brasil' || nacionalidade == 'brasil'){
+                resultado.innerHTML += `<p> Você é brasileiro! </p>`
+            } else{
+                resultado.innerHTML += `<p> Você é estrangeiro </p>`
+                resultado.innerHTML += '<p> Bem vindo ao Brasil </p>'
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>

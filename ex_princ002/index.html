@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+
+    <section id="contein">
+        <div id="conteiner2">
+
+                <p><label for="ano">Ano de nascimento: <input type="number" name="ano" id="ano" required min="1900" max="2025" placeholder="xxxx"></label></p>
+
+                <p> Sexo: 
+                    <label for="m"><input type="radio" name="sexo" id="m" required> Masculino</label>
+                    <label for="f"><input type="radio" name="sexo" id="f" required> Feminino</label>
+                </p>
+
+                <p><input id="enviar" type="submit" value="Verificar" onclick='verificar()'></p>
+            <div id="resultado">
+                <p id="ress">Preencha os dados acima para ver o resultado</p>
+            </div>
+            <div class="imagem">
+                <div id="foto"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; LisboaProg</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores aritméticos</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightblue;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Ordem de precedência</h1>
+    
+
+    <script>
+
+        var soma = 5+3
+        var resto = soma % 5
+        var multi_poten = 5 * resto ** 2
+        var sub_div = 10 - soma / 2
+        var multi_div = 6 * 2 / sub_div
+        var rest_soma_div = resto / multi_div + 4 / multi_div
+
+        document.write(`<code> = 5 + 3 <br> = ${soma} <br> <br>`)
+
+        document.write(`= 5 + 3 % 5 <br> = 5 + 1.5 <br> = ${resto} <br> <br>`)
+
+        document.write(` = 5 x (5 + 3 % 5) ** 2 <br> = 5 x 3 ** 2 <br> = 5 x 9 <br> = ${multi_poten} <br> <br>`)
+
+        document.write(`= 10 - (5 + 3) / 2 <br> = 10 - 8 / 2 <br> = 10 - 4 <br> = ${sub_div} <br> <br>`)
+
+        document.write(`= 6 x 2 / (10 - (5 + 3) / 2) <br> = 12 / (10 - 8 / 2) <br> = 12 / (10 - 4) <br> = 12  / 6 <br> = 2 <br> <br>`)
+
+        document.write(`= ((5 + 3) % 5) % (6 x 2 / (10 - (5 + 3) / 2)) + (4 / (6 x 2 / (10 - (5 + 3) / 2))) <br> = (8 % 5) % (12 / (10 - 8 / 2) + (4 / (12 / (10 - 8 / 2))) <br> = 3 % (12 / (10 - 4)) + (4 / (12 / (10 - 4))) <br> = 3 % (12 / 6) + (4 / (12 / 6)) <br> = (3 % 2) + (4 / 2) <br> = 1 + 2 <br> = 3`)
+
+    </script>
+
+</body>
+</html>
